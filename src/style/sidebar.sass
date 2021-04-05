@@ -1,0 +1,46 @@
+
+.side_bar
+  position: absolute
+  top: 0
+  left: -150px
+  width: 200px
+  height: 100vh
+  background-color: #ECEFF1
+  transition: 0.2s ease
+  z-index: 100
+  &--visible
+    transform: translateX(150px)
+
+  &__header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 18px
+    height: 50px
+    text-transform: uppercase
+  &__title
+    font-family: 'Nunito',sans-serif
+    color: #34515E
+  &__arrow
+    color: #8EACBB
+  &__burger
+    color: #8EACBB
+    transition: 0.2s ease
+  &__nav
+    border-top: 1px solid #CFD8DC
+    padding-top: 22px
+    & ul
+      list-style-position: inside
+  &__link
+    line-height: 20px
+    font-size: 14px
+    border: 1px solid red
+    border-radius: 3px
+    margin: 6px 12px
+    padding-left: 7px
+    transition: 0.1s ease
+    & a
+      color: #263238
+    &--active
+      color: #ffffff
+      background-color: #D32F2F
